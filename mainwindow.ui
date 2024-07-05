@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Шифрование и подпись изображений</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="selectFileButton">
+        <property name="text">
+         <string>Выбрать файл</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="generateKeysButton">
+        <property name="text">
+         <string>Сгенерировать ключи</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="processButton">
+        <property name="text">
+         <string>Обработать</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QLabel" name="sizeLabel">
+      <property name="text">
+       <string>Размеры файлов:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="imageLayout">
+      <item>
+       <widget class="QLabel" name="originalImage">
+        <property name="text">
+         <string>Оригинал</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="encryptedImage">
+        <property name="text">
+         <string>Зашифрованное</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="decryptedImage">
+        <property name="text">
+         <string>Расшифрованное</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+</ui>
